@@ -99,8 +99,23 @@ public class BMICalculator {
     }
 
     public String getBMICategoryName() {
-        // TODO: Your implementation
-        return "";
+        // This method provides the definition of the bmi category
+        switch(this.calculateBMICategory()){
+            case -2:
+                return "Sehr starkes Untergewicht";
+            case -1:
+                return "Untergewicht";
+            case 0:
+                return "Normalgewicht";
+            case 1:
+                return "Übergewicht";
+            case 2:
+                return "Sehr starkes Übergewicht";
+            case 3:
+                return "Error in: calculateBMICategory";
+            default:
+                return "Error in: getBMICategoryName";
+        }
     }
 
 }
