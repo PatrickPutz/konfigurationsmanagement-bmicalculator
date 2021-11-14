@@ -1,8 +1,8 @@
 /*
 
-Name: Your firstname and Lastname
-Email: Your Campus02-Mail-Address
-Matrikel-Number: Your Matrikel-Number
+Name: Patrick Putz
+Email: s50822@edu.campus02.at
+Matrikel-Number: 52101627
 
 
  */
