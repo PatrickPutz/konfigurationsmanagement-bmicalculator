@@ -68,8 +68,34 @@ public class BMICalculator {
     }
 
     public int calculateBMICategory() {
-        // TODO: Your implementation
-        return 0;
+        // This method calculates the integer value of the bmi category
+        if(this.gender == 'm'){
+            if(this.calculateBMI() < 16.0)
+                return -2;
+            else if (this.calculateBMI() < 18.5)
+                return -1;
+            else if (this.calculateBMI() < 25.0)
+                return 0;
+            else if (this.calculateBMI() < 35)
+                return 1;
+            else if (this.calculateBMI() >= 35.0)
+                return 2;
+        }
+
+        if(this.gender == 'f'){
+            if(this.calculateBMI() < 15.0)
+                return -2;
+            else if (this.calculateBMI() < 17.5)
+                return -1;
+            else if (this.calculateBMI() < 24.0)
+                return 0;
+            else if (this.calculateBMI() < 34)
+                return 1;
+            else if (this.calculateBMI() >= 34.0)
+                return 2;
+        }
+
+        return 3;
     }
 
     public String getBMICategoryName() {
