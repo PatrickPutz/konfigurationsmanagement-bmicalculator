@@ -56,13 +56,15 @@ public class BMICalculator {
         this.bodyWeight = bodyWeight;
     }
 
+
+
     private double round(double value) {
         return Math.round(value * 100) / 100D;
     }
 
     public double calculateBMI() {
-        // TODO: Your implementation
-        return 0;
+        // This method calculates the bmi double value of a person
+        return round(this.bodyWeight / (((double) this.bodyHeight / 100) * ((double) this.bodyHeight / 100)));
     }
 
     public int calculateBMICategory() {
